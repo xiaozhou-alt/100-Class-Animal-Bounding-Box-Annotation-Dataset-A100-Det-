@@ -18,19 +18,43 @@ To address these issues, this dataset (A100-Det) is constructed as a bounding bo
 
 
 
+**Dataset Download**: [100 Animal Species Bounding Box Annotation Dataset](https://www.scidb.cn/detail?dataSetId=e4b9586fc7ed4a4cbd6be0cd9da17618)
+
+**Citation**: If you use this dataset in your research, please cite the following formats:
+
+```Plain Text
+ZHOU Haojing. 100 Animal Species Bounding Box Annotation Dataset[DS/OL]. V1. Science Data Bank, 2026[2026-05-22]. https://doi.org/10.57760/sciencedb.29360. DOI:10.57760/sciencedb.29360.
+```
+
+Or use the BibTeX format:
+
+```Plain Text
+@misc{animal_detection,
+  author = {ZHOU Haojing},
+  title  = {100 Animal Species Bounding Box Annotation Dataset},
+  year   = {2026},
+  doi    = {10.57760/sciencedb.29360},
+  url    = {https://doi.org/10.57760/sciencedb.29360},
+  note   = {CSTR: 31253.11.sciencedb.29360},
+  publisher = {ScienceDB}
+}
+```
+
+### 
+
 ## 1.2 Basic Information of the Dataset
 
-- Number of animal species: 100 (see class.txt for specific species, sorted alphabetically by the first letter of their names)
+- **Animal Species**: 100 types \(see `class\.txt` for the full alphabetical list\)
 
-- Total number of samples: 11,354 images
+- **Total Samples**: 11,354 images
 
-- Single-category sample size: 100-130 images per species
+- **Single\-class Samples**: 100\-130 images per species
 
-- Annotation type: Bounding box (object detection)
+- **Annotation Type**: Bounding box \(for object detection tasks\)
 
-- Annotation formats: X-AnyLabeling original JSON format, VOC XML format
+- **Annotation Format**: X\-AnyLabeling original JSON, VOC XML
 
-- Image format: PNG
+- **Image Format**: PNG
 
 The number of images for each animal species in the dataset is shown in the figure below:
 
@@ -73,7 +97,7 @@ We adopt a semi-automatic annotation approach combining AI assistance and manual
 The dataset adopts a clear hierarchical folder structure to facilitate quick data location and usage. The overall structure is as follows:
 
 ```makefile
-animal/                  # Main folder
+A100-Det/                  # Main folder
 ├─ images/               # Image folder
 │  ├─ antelope/          # Animal-specific subfolders (sorted by class.txt)
 │  │  ├─ antelope_001.png
